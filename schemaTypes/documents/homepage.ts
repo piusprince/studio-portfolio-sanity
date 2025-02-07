@@ -71,12 +71,13 @@ export default defineType({
         },
       ],
     }),
-    // defineField({
-    //   name: 'featuredProjects',
-    //   title: 'Featured Projects',
-    //   type: 'array',
-    //   of: [{type: 'reference', to: [{type: 'project'}]}],
-    // }),
+    defineField({
+      name: 'featuredProjects',
+      title: 'Featured Projects',
+      description: 'Select projects to feature on the homepage',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'project'}]}],
+    }),
     defineField({
       name: 'contact',
       title: 'Contact Information',
