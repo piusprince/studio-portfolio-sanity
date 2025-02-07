@@ -72,6 +72,13 @@ export default defineType({
       initialValue: false,
     }),
     defineField({
+      name: 'imageOnRight',
+      title: 'Image on Right',
+      type: 'boolean',
+      description: 'Display the project image on the right side of the content',
+      initialValue: false,
+    }),
+    defineField({
       name: 'order',
       title: 'Display Order',
       type: 'number',
